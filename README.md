@@ -52,6 +52,8 @@ This command will:
 2.  Create or modify the project's `.Rprofile` file to ensure `renv` is loaded automatically whenever you open the project.
 3.  Discover the packages you are currently using in your scripts, install them into the new library, and create an initial `renv.lock` file by taking a snapshot.
 
+Note that `renv` might install way more packages than you were expecting it to - that is because it installs all the package dependencies too.
+
 #### Step 2: Install or Remove Packages
 
 As you work on your project, you'll install new packages. You can do this in the standard way. `renv` is smart enough to intercept this.
